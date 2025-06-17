@@ -328,6 +328,11 @@ body {
 	height: 24px;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+	color: var(--accent-color);
+}
+
 .section-title h1 {
 	font-size: 68px;
 	font-weight: 700;
@@ -1250,17 +1255,12 @@ header.main-header .header-sticky.active {
 
 .service-content {
 	position: relative;
-	border-bottom: 1px solid var(--divider-color);
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	transition: all 0.3s ease-in-out;
 	z-index: 1;
 }
 
-.service-item:hover .service-content,
-.service-item.active .service-content {
-	border-color: var(--dark-divider-color);
-}
 
 .service-content h3 {
 	font-size: 24px;
@@ -2582,7 +2582,6 @@ header.main-header .header-sticky.active {
 
 .features-content {
 	position: relative;
-	border-bottom: 1px solid var(--divider-color);
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	transition: all 0.3s ease-in-out;
